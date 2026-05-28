@@ -1,12 +1,12 @@
-# Basis data sederhana
 database = {
     101: "Rosihan",
     102: "Andi",
     103: "Budi"
 }
 
-# Menampilkan data
+print("Isi database:")
 print(database)
 
-# Mengambil data berdasarkan ID
-print("ID 101 =", database[101])
+id_cari = 101
+
+print("Data dengan ID", id_cari, "=", database.get(id_cari))
