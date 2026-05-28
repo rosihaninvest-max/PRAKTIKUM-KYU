@@ -1,11 +1,30 @@
-# Kata-kata spam
-spam_words = {"promo", "diskon", "hadiah"}
+# =========================
+# PROGRAM DETEKSI EMAIL SPAM
+# =========================
 
-# Isi email
-email = {"halo", "anda", "mendapat", "hadiah"}
+# Daftar kata yang dianggap spam
+spam_words = {
+    "promo",
+    "diskon",
+    "hadiah"
+}
 
-# Cek apakah ada kata spam
-if spam_words.intersection(email):
-    print("Email kemungkinan spam")
+# Isi email yang diterima
+email_words = {
+    "halo",
+    "anda",
+    "mendapat",
+    "hadiah"
+}
+
+# Mencari kata yang sama
+detected_spam = spam_words.intersection(email_words)
+
+# Menampilkan hasil
+print("=== HASIL PENGECEKAN EMAIL ===")
+
+if detected_spam:
+    print("Email kemungkinan SPAM")
+    print("Kata spam terdeteksi:", detected_spam)
 else:
     print("Email aman")
