@@ -1,0 +1,11 @@
+# Kata-kata spam
+spam_words = {"promo", "diskon", "hadiah"}
+
+# Isi email
+email = {"halo", "anda", "mendapat", "hadiah"}
+
+# Cek apakah ada kata spam
+if spam_words.intersection(email):
+    print("Email kemungkinan spam")
+else:
+    print("Email aman")
