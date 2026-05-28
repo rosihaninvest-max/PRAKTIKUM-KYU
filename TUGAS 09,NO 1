@@ -1,0 +1,12 @@
+# Basis data sederhana
+database = {
+    101: "Rosihan",
+    102: "Andi",
+    103: "Budi"
+}
+
+# Menampilkan data
+print(database)
+
+# Mengambil data berdasarkan ID
+print("ID 101 =", database[101])
