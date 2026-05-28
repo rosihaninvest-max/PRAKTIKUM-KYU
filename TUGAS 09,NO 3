@@ -1,0 +1,20 @@
+# Membuat node lagu
+class Node:
+    def __init__(self, lagu):
+        self.lagu = lagu
+        self.next = None
+
+# Membuat linked list
+lagu1 = Node("Lagu A")
+lagu2 = Node("Lagu B")
+lagu3 = Node("Lagu C")
+
+# Menghubungkan node
+lagu1.next = lagu2
+lagu2.next = lagu3
+
+# Menampilkan playlist
+current = lagu1
+while current:
+    print(current.lagu)
+    current = current.next
